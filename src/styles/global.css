@@ -1,0 +1,205 @@
+/* General Styles */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #0d0c22;
+  background-color: #f4f4f9;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; /* Verhindert horizontales Scrollen */
+}
+
+body {
+  min-height: 100vh; /* Immer die volle Höhe des Viewports */
+  padding: 10px; /* Generelles Padding */
+  flex: 1;
+}
+
+/* Container für maximale Flexibilität */
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Immer volle Breite */
+  height: 100%; /* Immer volle Höhe */
+  margin: 0;
+  padding: 0;
+}
+
+/* Top Menu Bar */
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 5%; /* Dynamisches Padding */
+  background-color: #0056b3;
+  color: white;
+  width: 100%; /* Immer volle Breite */
+  margin: 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content.open {
+  display: block;
+}
+
+.dropdown-item {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Menu Item */
+.menu-item {
+  margin: 5px 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.menu-item:hover {
+  color: #ffcc00;
+}
+/* Logo */
+.logo {
+  margin-right: 2px;
+}
+
+.logo-image {
+  height: 50px;
+  width: auto;
+}
+/* Map Container */
+.map-container {
+  font-family: 'Arial', sans-serif;
+  background: #ffffff;
+  color: #333333;
+  padding: 20px;
+  margin: 20px auto 0;
+  width: auto; /* Fast volle Breite Ich habe das geändert*/ 
+  height: auto; /* Passt sich dynamisch an */
+  max-width: 1200px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Book Container */
+.book-container {
+  font-family: 'Arial', sans-serif;
+  background: #ffffff;
+  color: #333333;
+  padding: 20px;
+  margin: 20px auto;
+  width: 95%;
+  max-width: 1200px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Dynamische Breiten für größere Bildschirme */
+@media (min-width: 1024px) {
+  .book-container, .map-container {
+      width: 90%; /* Noch mehr Platz für größere Screens */
+      padding: 40px;
+  }
+}
+
+/* Full-Screen-Responsivität */
+@media (max-width: 768px) {
+  .map-container, .book-container {
+      width: 100%; /* Volle Breite auf kleineren Screens */
+      padding: 15px;
+  }
+}
+
+/* Flexibles Text-Layout */
+h1, h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem; /* Dynamische Skalierung */
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Top Menu Anpassung für mobile Geräte */
+@media (max-width: 480px) {
+  .top-menu {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .menu-item {
+      margin: 10px 0;
+  }
+}
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content.open {
+  display: block;
+}
+
+.dropdown-item {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
