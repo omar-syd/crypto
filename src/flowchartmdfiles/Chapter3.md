@@ -100,8 +100,8 @@ graph TD
     B --> D
     B --> C
 
-    D --> E
-    D --> F
+    D ===> E
+    D ===> F
     E --> G
     E --> J
     E --> K
