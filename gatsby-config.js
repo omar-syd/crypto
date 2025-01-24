@@ -38,6 +38,8 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`, //von mir
+    `gatsby-plugin-offline`, //von mir
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
